@@ -1,1 +1,72 @@
+.about > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.about .about-content-col h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.about .about-content-col p {
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.about .about-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.about .about-checklist li {
+  position: relative;
+  padding: 8px 0 8px 32px;
+  font-weight: 500;
+}
+
+.about .about-checklist li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 16px;
+  height: 8px;
+  border-left: 2px solid var(--brcolor);
+  border-bottom: 2px solid var(--brcolor);
+  transform: rotate(-45deg);
+}
+
+.about a.button {
+  background: var(--brcolor);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 12px 28px;
+}
+
+@media (width >= 900px) {
+  .about > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .about > div > div {
+    flex: 1;
+  }
+
+  .about .about-content-col h2 {
+    font-size: 38px;
+  }
+}
 
